@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - with proper grammar, but the outcome is a piece of art
+ * main - printout a to stdio.
  * Return: 0 (success)
  */
 int main(void)
