@@ -7,9 +7,9 @@
  * 0 otherwise
  */
 
-int _isupper(int x)
+int isupper(int x)
 {
-	if (x >=65 $$ x <= 90)
+	if (x >= 65 && x <= 90)
 	{
 	return (1);
 	}
