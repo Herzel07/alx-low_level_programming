@@ -9,6 +9,7 @@
 void pring_most_number(void)
 {
 	int x = 0;
+
 	for (; x <= 0; x++)
 	{
 	if (x == 2 || x == 4)
