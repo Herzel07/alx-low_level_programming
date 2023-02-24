@@ -5,7 +5,6 @@
  * description - print all number excluding 2 and 4
  * Return: The numbers from 0 to 9
  */
-
 void pring_most_number(void)
 {
 	int x = 0;
