@@ -1,12 +1,15 @@
 #include "main.h"
+
 /**
  * description -  draws a straight line in the terminal
- * @n: number of lines 
- * Return: 0
+ * @n: number of lines
+ * Return: empty
  */
+
 void print_line(void)
 {
 	int x;
+
 	if (n <= 0)
 	{
 	_putchar('\n')
