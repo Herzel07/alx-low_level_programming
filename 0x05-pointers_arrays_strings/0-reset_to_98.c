@@ -8,11 +8,6 @@
 
 int main(void)
 {
-	int n;
-
-	int n = 98;
-	int *p = &n
-
-	printf("%d\n ", &n);
+	*n = 98;
 	return (0);
 }
