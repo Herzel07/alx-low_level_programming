@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - function that prints a string.
+ * _puts - function that prints a string.
  * @str: string to stdout
  * Return: 0;
  */
@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	while (str[a] != '\0')
 	{
-		-putchar(str[a]);
+		_putchar(str[a]);
 		a++;
 	}
 	_putchar('\n');
