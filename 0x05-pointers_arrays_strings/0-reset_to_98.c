@@ -9,10 +9,9 @@ int main(void)
 {
 	int n;
 
-	n = 98
-	int ptr = &n
+	int n = 98;
+	int *p = &n
 
 	printf("%d\n ", n);
 	return (0);
 }
-
