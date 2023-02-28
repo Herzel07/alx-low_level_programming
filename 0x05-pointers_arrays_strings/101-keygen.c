@@ -21,6 +21,6 @@ int main(void)
 		a = a + i;
 		printf("%a", i);
 	}
-	printf("%a\n", (2772 - a));
+	printf("%d\n", (2772 - a));
 	return (0);
 }
