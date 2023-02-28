@@ -3,13 +3,13 @@
 /**
  * _atoi - convert a string to an integer.
  * @s: string to be converted
- * Return: integer value
+ * Return: integer value;
  */
 
 int _atoi(char *s)
+
 {
 	int i = 0, a = 0, m = 0, len = 0, f = 0, sign = 0;
-
 
 	while (s[len] != '\0')
 		len++;
