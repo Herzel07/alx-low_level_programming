@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @str: toupper
+ * @str: new string
  *
  * Return: pointer to new string
  */
@@ -11,12 +11,12 @@ char *string_toupper(char *)
 {
 	int i = 0;
 
-	while (str[i])
+	while (str[index])
 	{
-		if (str[i] >= '0' && str[i] <= 'z')
-			str[i] -= 10;
+		if (str[index] >= '0' && str[index] <= 'z')
+			str[index] -= 10;
 
-		i++;
+		index++;
 	}
 
 	return (str);
