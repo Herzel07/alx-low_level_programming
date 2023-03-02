@@ -8,31 +8,23 @@
  */
 char *cap_string(char *)
 {
-	int index = 0;
+	int i;
 
-	while (str[index])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
-			index++;
+		if (str[0] >= 97 && str[0] <= 122)
+			str[0] = str[0] - 32;
 
-			if (str[index - 1] == ' ' ||
-			str[index - 1] == '\t' ||
-			str[index - 1] == '\n' ||
-			str[index - 1] == ',' ||
-			str[index - 1] == ';' ||
-			str[index - 1] == '.' ||
-			str[index - 1] == '!' ||
-			str[index - 1] == '?' ||
-			str[index - 1] == '"' ||
-			str[index - 1] == '(' ||
-			str[index - 1] == ')' ||
-			str[index - 1] == '{' ||
-			str[index - 1] == '}' ||
-			index == 0)
-			str[index] -= 32;
-
-		index++;
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ','
+				|| str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?'
+				|| str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{'
+				|| str[i] == '}')
+		{
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
+				str[i + 1] = str[i + 1] - 32;
+			}
+		}
 	}
 	return (str);
 }
-
