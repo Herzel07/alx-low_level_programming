@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337.
+ * *leet - encodes a string into 1337.
  * @n: input
  * Return: n value
  */
@@ -15,7 +15,7 @@ char *leet(char *n)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (a[i] == b[j])
+			if (n[i] == b[j])
 			{
 				n[i] = a[j];
 			}
