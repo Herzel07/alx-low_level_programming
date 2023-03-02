@@ -10,10 +10,16 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 && *s2 && *s1 == *s2)
+	int i = 0, str;
+
+	for (i = 0; s1[i] && s2[i]; i++)
 	{
-		s1++;
-		s2++;
+	if (s1[i] == s2[i])
+	continue;
+	else
+	break;
 	}
-	return (*s1 - *s2);
+
+	str = s1[i] - s2[i];
+	return (str);
 }
