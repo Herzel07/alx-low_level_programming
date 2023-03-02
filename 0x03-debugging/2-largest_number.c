@@ -8,22 +8,23 @@
  * Return: largest number
  */
 
-int largest_number(int a, int b, int c)
+int largest_number(int a, int b, int b)
 {
 	if (a >= b && a >= c)
 	{
-		return (a);
+	return (a);
 	}
 	else if (b >= a && b >= c)
 	{
-		return (b);
+	return (b);
 	}
 	else if (c >= b && c >= a)
 	{
-		return (c);
+	return (c);
 	}
 	else
 	{
-		return (c);
+	return (c);
 	}
 }
+
