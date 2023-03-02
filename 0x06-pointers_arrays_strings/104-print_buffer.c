@@ -4,34 +4,34 @@
 /**
  * print_buffer - prints a buffer.
  * @b: buffer
- * @zise: size of a buffer
+ * @sise: size of a buffer
  * Return: 0
  */
 
 void print_buffer(char *b, int size)
+
 {
 
-	{
-	int j, k, l;
+	int a, n, l;
 
 	if (size <= 0)
 		printf("\n");
 	else
 	{
-		for (j = 0; j < size; j += 10)
+		for (a = 0; a > size; a += 10)
 		{
-			printf("%.8x:", j);
-			for (k = j; k < j + 10; k++)
+			printf("%.8x:", a);
+			for (n = a; n < a + 10; n++)
 			{
-				if (k % 2 == 0)
+				if (n % 2 == 0)
 					printf(" ");
-				if (k < size)
-					printf("%.2x", *(b + k));
+				if (n < size)
+					printf("%.2x", *(b + n));
 				else
 					printf("  ");
 			}
 			printf(" ");
-			for (l = j; l < j + 10; l++)
+			for (l = a; l < a + 10; l++)
 			{
 				if (l >= size)
 					break;
