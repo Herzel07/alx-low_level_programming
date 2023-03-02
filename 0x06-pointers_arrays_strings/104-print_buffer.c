@@ -31,16 +31,17 @@ void print_buffer(char *b, int size)
 			printf("  ");
 	}
 	printf(" ");
-			for (c = a; c < a + 10; c++)
-			{
-				if (c >= size)
-					break;
-				if (*(b + c) < 32 || *(b + i) > 126)
-					printf("%c", '.');
-				else
-					printf("%c", *(b + c));
-			}
-			printf("\n");
-		}
+	for (c = a; c < a + 10; c++)
+	{
+		if (c >= size)
+			break;
+		if (*(b + c) < 32 || *(b + c) > 126)
+			printf("%c", '.');
+		else
+			printf("%c", *(b + c));
 	}
+	printf("\n");
+	}
+	}
+	return (0);
 }
