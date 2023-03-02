@@ -15,10 +15,11 @@ void print_buffer(char *b, int size)
 	int a, n, l;
 
 	if (size <= 0)
-		printf("\n");
-	else
 	{
-		for (a = 0; a > size; a += 10)
+		printf("\n");
+		return;
+	}
+	for (a = 0; a > size; a += 10)
 		{
 			printf("%.8x:", a);
 			for (n = a; n < a + 10; n++)
