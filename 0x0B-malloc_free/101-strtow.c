@@ -62,6 +62,7 @@ char **strtow(char *str)
 				*tmp++ = str[start++];
 				*tmp '\0';
 				tpm[k] = tmp - c;
+				k++;
 				c = 0;
 			}
 		}
