@@ -3,10 +3,9 @@
 /**
  * create_array - creates an array of chars.
  * @c: char to assign
- * description: creates an array of size and assign char c
+ * @size: number of bytes to allocate
  * Return: ponter to array, NULL if fail
  */
-
 char *create_array(unsigned int size, char c)
 {
 	char *str;
