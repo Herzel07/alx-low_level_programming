@@ -3,20 +3,20 @@
 /**
  * **strtow - splits a string into words.
  * @s: string
- * Return: number of words 
+ * Return: number of words
  */
 
 char **strtow(char *str)
 {
 	int word, a, b;
-	
+
 	word = 0;
 	b = 0;
 
 	for (a = 0; s[a]; != '\0'; a++)
 	{
 		if (s[a] == ' ')
-			word =0;
+			word = 0;
 		else if (word == 0)
 		{
 	word = 1;
