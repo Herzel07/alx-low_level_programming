@@ -7,7 +7,7 @@
  * @n: number of bytes from s2 to s1
  * Return: pointer to string
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
 
@@ -26,6 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	if (!s)
 		return (NULL);
 	while (i < p1)
-	{
-		s[i] = p1[i];
+
+		s[i] = s1[i];
 		i++;
+}
