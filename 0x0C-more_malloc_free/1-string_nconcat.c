@@ -21,7 +21,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	for (ptr1 = 0; s1[ptr1] != '\0'; ptr1++)
+		;
+
 	for (ptr2 = 0; s2[ptr2] != '\0'; ptr2++)
+		;
 
 	if (n > ptr2)
 		n = ptr2;
