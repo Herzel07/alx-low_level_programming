@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - multiplies two positive numbers.
@@ -7,7 +9,7 @@
  * Return: 0
  */
 
-int main(int argc, char *agrv[])
+int main(int argc, char *argv[])
 
 {
 	unsigned long mul;
@@ -20,7 +22,7 @@ int main(int argc, char *agrv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		for (a = 0; argv[i][a] > 57 || argv[i][a] < 48)
+		for (a = 0; argv[i][a] > 57 || argv[i][a] < 48;)
 		{
 			printf("error\n");
 			exit(98);
