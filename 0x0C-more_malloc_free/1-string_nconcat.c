@@ -31,4 +31,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s[i] = s1[i];
 		i++;
 	}
+	_putchar('\n');
 }
