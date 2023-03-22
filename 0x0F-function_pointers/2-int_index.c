@@ -5,11 +5,9 @@
  * @array: array to search.
  * @size: number of elements.
  * @cmp: pointer to the function.
- *
  * Return: function does not return 0
  * If no element matches, return -1
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int a;
@@ -18,8 +16,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (a = 0; a < size; a++)
 		{
-	if (cmp(array[a]) != 0)
-		return (a);
+		if (cmp(array[a]) != 0)
+			return (a);
 		}
 	}
 	return (-1);
