@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int bytes, i;
+	int b, i;
 	char *tmp;
 
 	if (argc != 2)
@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	bytes = atoi(argv[1]);
+	b = atoi(argv[1]);
 
-	if (bytes < 0)
+	if (b < 0)
 	{
 		printf("Error\n");
 		exit(2);
@@ -29,9 +29,9 @@ int main(int argc, char *argv[])
 
 	tmp = (char *)main;
 
-	for (i = 0; i < bytes; i++)
+	for (i = 0; i < b; i++)
 	{
-		if (i == bytes -1)
+		if (i == b -1)
 		{
 			printf("%02hhx\n", tmp[i]);
 			break;
