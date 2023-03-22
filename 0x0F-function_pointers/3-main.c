@@ -1,4 +1,5 @@
-#includes "3-calc.h"
+#include "3-calc.h"
+#include <stdio.h>
 
 /**
  * main - program that performs main function.
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("error\n"0);
+		printf("error\n");
 		exit(98);
 	}
 
