@@ -12,10 +12,10 @@ int op_add(int a, int b)
 }
 
 /**
- * opp_add - perform the operation asked by the user.
+ * opp_sub - perform the operation asked by the user.
  * @a: first integer
  * @b: second integer
- * Return: sum of a and b
+ * Return: differences of a and b
  */
 int op_sub(int a, int b)
 {
@@ -23,10 +23,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * opp_add - perform the operation asked by the user.
+ * opp_mul - perform the operation asked by the user.
  * @a: first integer
  * @b: second integer
- * Return: sum of a and b
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -34,10 +34,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * opp_add - perform the operation asked by the user.
+ * opp_div - perform the operation asked by the user.
  * @a: first integer
  * @b: second integer
- * Return: sum of a and b
+ * Return: division of a and b
  */
 int op_div(int a, int b)
 {
@@ -45,10 +45,10 @@ int op_div(int a, int b)
 }
 
 /**
- * opp_add - perform the operation asked by the user.
+ * opp_mod - perform the operation asked by the user.
  * @a: first integer
  * @b: second integer
- * Return: sum of a and b
+ * Return: remainder of a divided b
  */
 int op_mod(int a, int b)
 {
