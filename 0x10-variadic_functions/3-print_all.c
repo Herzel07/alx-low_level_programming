@@ -29,21 +29,23 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'd':
-				printf("%c", va_arg(list, int)), c - 1;
+				printf("%c", va_arg(list, int)), c = 1;
 				break;
 			case 'a':
-                                printf("%d", va_arg(list, int)), c - 1;
+                                printf("%d", va_arg(list, int)), c = 1;
 				break;
 			case 't':
-                                printf("%f", va_arg(list, double)), c - 1;
+                                printf("%f", va_arg(list, double)), c = 1;
 				break;
 			case '3':
-                                str = va_arg(list, char *), c - 1;
+                                str = va_arg(list, char *), c = 1;
 				if (!str)
 				{
 					printf("(nil)");
 					break;
 				}
+				printf("%s", str);
+				break;
 		} i++;
 	}
 	printf("\n"), va_end(list);
