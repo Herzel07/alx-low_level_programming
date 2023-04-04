@@ -19,7 +19,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(str);
 		return (1);
 	}
-	for (node = 0; node < (index -1); node++)
+	for (node = 0; node < (index - 1); node++)
 	{
 		if (str->next == NULL)
 			return (-1);
