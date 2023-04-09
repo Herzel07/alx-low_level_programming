@@ -8,7 +8,6 @@
  * Return: if filename is NULL can not be opened or read,
  * 	   return 0.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t i, a, b;
